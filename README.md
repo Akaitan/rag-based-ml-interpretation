@@ -141,11 +141,29 @@ python src/build_index.py
 python src/ask_rag.py
 ```
 
+### 5. RAGあり・なしを同条件で比較
+
+```bash
+python src/compare_rag.py
+```
+
+以下の2つの回答を同じMarkdownレポートに保存します。
+
+1. モデル結果だけを生成AIに読ませた回答
+2. RAGで取得した社内知識とモデル結果を生成AIに読ませた回答
+
+比較では、モデル結果、質問、生成モデル、生成設定を共通化し、RAG文脈の有無だけを変えています。  
+結果は `outputs/rag_comparison.md` に保存され、RAGで実際に取得した文書と比較観点も確認できます。
+
 ## 現時点の実装範囲
 
 現時点では、以下を実装済みです。
 
+<<<<<<< HEAD
  - Markdown 文書を用いたRAG構築
+=======
+ - Markdown 文書を用いた RAG
+>>>>>>> 98fdaaf (revise_compare)
  - 段落ベースの簡易チャンク分割
  - embedding による類似検索
  - LightGBM による住宅価格予測
@@ -158,4 +176,8 @@ python src/ask_rag.py
  - チャンク分割ロジックの改善
  - 同一文書からの重複取得制御の改善
  - 説明生成プロンプトの改善
+<<<<<<< HEAD
  - より業務に近い知識文書の追加　など。
+=======
+ - より業務に近い知識文書の追加　など。
+>>>>>>> 98fdaaf (revise_compare)
