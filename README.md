@@ -145,7 +145,7 @@ python src/ask_rag.py
 
 現時点では、以下を実装済みです。
 
- - Markdown 文書を用いたローカル RAG
+ - Markdown 文書を用いたRAG構築
  - 段落ベースの簡易チャンク分割
  - embedding による類似検索
  - LightGBM による住宅価格予測
